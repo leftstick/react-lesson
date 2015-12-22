@@ -1,0 +1,22 @@
+{
+  "name": "react-lesson",
+  "version": "1.0.0",
+  "description": "Coding with me in those lessons",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leftstick/react-lesson.git"
+  },
+  "keywords": [
+    "React",
+    "lesson"
+  ],
+  "author": "Howard.Zuo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leftstick/react-lesson/issues"
+  },
+  "homepage": "https://github.com/leftstick/react-lesson#readme"
+}
