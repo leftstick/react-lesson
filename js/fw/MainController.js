@@ -2,7 +2,11 @@
 
 import React from 'react';
 import Dashboard from './Dashboard';
-import Lesson1 from '../lessons/Lesson1';
+import Lesson1 from '../lessons/lesson1/index';
+import Lesson2 from '../lessons/lesson2/index';
+import Lesson3 from '../lessons/lesson3/index';
+import Lesson4 from '../lessons/lesson4/index';
+import Lesson5 from '../lessons/lesson5/index';
 import { Router, Route } from 'react-router';
 
 class MainController extends React.Component {
