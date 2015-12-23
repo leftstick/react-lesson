@@ -18,5 +18,24 @@
   "bugs": {
     "url": "https://github.com/leftstick/react-lesson/issues"
   },
-  "homepage": "https://github.com/leftstick/react-lesson#readme"
+  "homepage": "https://github.com/leftstick/react-lesson#readme",
+  "devDependencies": {
+    "babel-core": "^6.3.21",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "css-loader": "^0.23.1",
+    "del": "^2.2.0",
+    "gulp": "^3.9.0",
+    "gulp-replace": "^0.5.4",
+    "gulp-util": "^3.0.7",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  },
+  "dependencies": {
+    "normalize.css": "^3.0.3",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3"
+  }
 }
