@@ -11,6 +11,10 @@ class Lesson2 extends React.Component {
         super(props);
     }
 
+    _onClickBtn(e) {
+        alert(e.target.innerHTML);
+    }
+
     render() {
         return (
             <div style={ styles.container }>
@@ -18,7 +22,7 @@ class Lesson2 extends React.Component {
               <LessonHelper>
                 <DocumentLink link='http://facebook.github.io/react/docs/events.html' text='Read events' />
               </LessonHelper>
-              <button>
+              <button onClick={ this._onClickBtn }>
                 Punch me, bitch!
               </button>
             </div>
