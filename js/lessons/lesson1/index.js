@@ -27,6 +27,8 @@ class Lesson1 extends React.Component {
 var styles = {
     container: {},
     text: {
+        width: '144px',
+        height: '26px',
         padding: '3px',
         borderWidth: '1px',
         borderStyle: 'solid',
