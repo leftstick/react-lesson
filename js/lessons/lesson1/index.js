@@ -18,12 +18,22 @@ class Lesson1 extends React.Component {
               <LessonHelper>
                 <DocumentLink link='http://facebook.github.io/react/tips/inline-styles.html' text='Read inline-styles' />
               </LessonHelper>
-              <strong>center me, please</strong>
+              <strong style={ styles.text }>center me, please</strong>
             </div>
             );
     }
 }
 
-var styles = {container: {}};
+var styles = {
+    container: {},
+    text: {
+        padding: '3px',
+        borderWidth: '1px',
+        borderStyle: 'solid',
+        borderColor: '#BDBDBD',
+        borderRadius: '3px',
+        backgroundColor: '#F2F2F2'
+    }
+};
 
 module.exports = Lesson1;
