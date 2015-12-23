@@ -6,13 +6,19 @@ class InputBar extends React.Component {
 
     constructor(props) {
         super(props);
+        this._addText = this._addText.bind(this);
+    }
+
+    _addText(e) {
+        this.props.onTextAdded(this.refs.txt.value);
+        this.refs.txt.value = '';
     }
 
     render() {
         return (
             <div>
-              <input type='text' />
-              <button>
+              <input type='text' ref='txt' />
+              <button onClick={ this._addText }>
                 ADD
               </button>
             </div>
@@ -20,6 +26,6 @@ class InputBar extends React.Component {
     }
 }
 
-InputBar.propTypes = {};
+InputBar.propTypes = {onTextAdded: React.PropTypes.func};
 
 module.exports = InputBar;

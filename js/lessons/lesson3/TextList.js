@@ -11,14 +11,18 @@ class TextList extends React.Component {
     render() {
         return (
             <ul>
-              <li>
-                text should be added here
-              </li>
+              { this.props.list.map(function(txt, index) {
+                    return (
+                        <li key={ index }>
+                          { txt }
+                        </li>
+                        );
+                }) }
             </ul>
             );
     }
 }
 
-TextList.propTypes = {};
+TextList.propTypes = {list: React.PropTypes.array};
 
 module.exports = TextList;

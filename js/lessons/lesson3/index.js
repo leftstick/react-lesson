@@ -11,6 +11,12 @@ class Lesson3 extends React.Component {
 
     constructor(props) {
         super(props);
+        this.state = {list: []};
+        this._textAdded = this._textAdded.bind(this);
+    }
+
+    _textAdded(text) {
+        this.setState({list: [text,...this.state.list]});
     }
 
     render() {
@@ -21,8 +27,8 @@ class Lesson3 extends React.Component {
                 <DocumentLink link='http://facebook.github.io/react/docs/more-about-refs.html#the-ref-string-attribute' text='Read reference' />
                 <DocumentLink link='http://facebook.github.io/react/docs/multiple-components.html#dynamic-children' text='Read dynamic-children' />
               </LessonHelper>
-              <InputBar/>
-              <TextList />
+              <InputBar onTextAdded={ this._textAdded } />
+              <TextList list={ this.state.list } />
             </div>
             );
     }
