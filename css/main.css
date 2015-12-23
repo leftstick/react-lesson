@@ -3,3 +3,7 @@ html, body, #view{
     width: 100%;
     overflow-y: hidden;
 }
+
+div, strong{
+    box-sizing: border-box;
+}

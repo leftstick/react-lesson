@@ -27,12 +27,19 @@ class Lesson1 extends React.Component {
 var styles = {
     container: {},
     text: {
+        width: '144px',
+        height: '26px',
         padding: '3px',
         borderWidth: '1px',
         borderStyle: 'solid',
         borderColor: '#BDBDBD',
         borderRadius: '3px',
-        backgroundColor: '#F2F2F2'
+        backgroundColor: '#F2F2F2',
+        position: 'absolute',
+        top: '50%',
+        marginTop: '-13px',
+        left: '50%',
+        marginLeft: '-72px'
     }
 };
 
