@@ -20,7 +20,7 @@ class Lesson1 extends React.Component {
                 <span>This component should accept a number as start point, and a button to start counting it down to 0</span>
                 <DocumentLink link='http://facebook.github.io/react/tips/inline-styles.html' text='Read inline-styles' />
               </LessonHelper>
-              <CountdownTimer/>
+              <CountdownTimer start={ 5 } />
             </div>
             );
     }
