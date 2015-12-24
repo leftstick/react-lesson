@@ -18,6 +18,7 @@ class Lesson2 extends React.Component {
               <LessonTitle text='alert something while clicking below button' />
               <LessonHelper>
                 <DocumentLink link='http://facebook.github.io/react/docs/events.html' text='Read events' />
+                <DocumentLink link='http://facebook.github.io/react/docs/tags-and-attributes.html' text='Read attributes' />
               </LessonHelper>
               <Preview>
                 <button>
