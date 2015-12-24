@@ -21,7 +21,7 @@ class Lesson3 extends React.Component {
               <LessonHelper>
                 <DocumentLink link='http://facebook.github.io/react/docs/more-about-refs.html#the-ref-string-attribute' text='Read reference' />
                 <DocumentLink link='http://facebook.github.io/react/docs/multiple-components.html#dynamic-children' text='Read dynamic-children' />
-                <DocumentLink link='http://facebook.github.io/react/docs/reusable-components.html' text='Read reusable-components' />
+                <DocumentLink link='http://facebook.github.io/react/docs/reusable-components.html#es6-classes' text='Read reusable-components' />
               </LessonHelper>
               <Preview>
                 <InputBar/>
