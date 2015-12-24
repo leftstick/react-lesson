@@ -4,6 +4,7 @@ import React from 'react';
 import DocumentLink from 'fw/DocumentLink';
 import LessonTitle from 'fw/LessonTitle';
 import LessonHelper from 'fw/LessonHelper';
+import Preview from 'fw/Preview';
 
 class Lesson2 extends React.Component {
 
@@ -13,19 +14,19 @@ class Lesson2 extends React.Component {
 
     render() {
         return (
-            <div style={ styles.container }>
+            <div>
               <LessonTitle text='alert something while clicking below button' />
               <LessonHelper>
                 <DocumentLink link='http://facebook.github.io/react/docs/events.html' text='Read events' />
               </LessonHelper>
-              <button>
-                Punch me, bitch!
-              </button>
+              <Preview>
+                <button>
+                  Punch me, bitch!
+                </button>
+              </Preview>
             </div>
             );
     }
 }
-
-var styles = {container: {}};
 
 module.exports = Lesson2;
