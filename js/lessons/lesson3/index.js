@@ -4,6 +4,7 @@ import React from 'react';
 import DocumentLink from 'fw/DocumentLink';
 import LessonTitle from 'fw/LessonTitle';
 import LessonHelper from 'fw/LessonHelper';
+import Preview from 'fw/Preview';
 import InputBar from './InputBar';
 import TextList from './TextList';
 
@@ -21,19 +22,19 @@ class Lesson3 extends React.Component {
 
     render() {
         return (
-            <div style={ styles.container }>
+            <div>
               <LessonTitle text='add input text into below list' />
               <LessonHelper>
                 <DocumentLink link='http://facebook.github.io/react/docs/more-about-refs.html#the-ref-string-attribute' text='Read reference' />
                 <DocumentLink link='http://facebook.github.io/react/docs/multiple-components.html#dynamic-children' text='Read dynamic-children' />
               </LessonHelper>
-              <InputBar onTextAdded={ this._textAdded } />
-              <TextList list={ this.state.list } />
+              <Preview>
+                <InputBar onTextAdded={ this._textAdded } />
+                <TextList list={ this.state.list } />
+              </Preview>
             </div>
             );
     }
 }
-
-var styles = {container: {}};
 
 module.exports = Lesson3;

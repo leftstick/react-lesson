@@ -4,6 +4,7 @@ import React from 'react';
 import DocumentLink from 'fw/DocumentLink';
 import LessonTitle from 'fw/LessonTitle';
 import LessonHelper from 'fw/LessonHelper';
+import Preview from 'fw/Preview';
 
 class Lesson1 extends React.Component {
 
@@ -13,19 +14,27 @@ class Lesson1 extends React.Component {
 
     render() {
         return (
-            <div style={ styles.container }>
+            <div>
               <LessonTitle text='Make below text in the center of the screen' />
               <LessonHelper>
+                <span>modify style only</span>
                 <DocumentLink link='http://facebook.github.io/react/tips/inline-styles.html' text='Read inline-styles' />
               </LessonHelper>
-              <strong style={ styles.text }>center me, please</strong>
+              <Preview style={ styles.container }>
+                <strong style={ styles.text }>center me, please</strong>
+              </Preview>
             </div>
             );
     }
 }
 
 var styles = {
-    container: {},
+    container: {
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
     text: {
         width: '144px',
         height: '26px',
@@ -34,12 +43,7 @@ var styles = {
         borderStyle: 'solid',
         borderColor: '#BDBDBD',
         borderRadius: '3px',
-        backgroundColor: '#F2F2F2',
-        position: 'absolute',
-        top: '50%',
-        marginTop: '-13px',
-        left: '50%',
-        marginLeft: '-72px'
+        backgroundColor: '#F2F2F2'
     }
 };
 
