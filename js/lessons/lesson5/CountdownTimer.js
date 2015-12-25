@@ -14,10 +14,6 @@ class CountdownTimer extends React.Component {
         this._resetTick = this._resetTick.bind(this);
     }
 
-    shouldComponentUpdate(nextProps, nextState) {
-        return this.props.start !== nextProps.start;
-    }
-
     _tick() {
         if (this.state.point === 0) {
             return this._endTick();
