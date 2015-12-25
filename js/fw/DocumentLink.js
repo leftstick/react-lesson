@@ -8,6 +8,10 @@ class DocumentLink extends React.Component {
         super(props);
     }
 
+    shouldComponentUpdate(nextProps, nextState) {
+        return this.props.link !== nextProps.link || this.props.text !== nextProps.text;
+    }
+
     render() {
         return (
             <p>

@@ -8,6 +8,10 @@ class LessonHelper extends React.Component {
         super(props);
     }
 
+    shouldComponentUpdate(nextProps, nextState) {
+        return this.props.text !== nextProps.text;
+    }
+
     render() {
         return (
             <div style={ styles.helper }>

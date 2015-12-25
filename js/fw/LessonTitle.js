@@ -8,6 +8,10 @@ class LessonTitle extends React.Component {
         super(props);
     }
 
+    shouldComponentUpdate(nextProps, nextState) {
+        return this.props.text !== nextProps.text;
+    }
+
     render() {
         return (
             <h2 style={ styles.header }>{ this.props.text }</h2>
