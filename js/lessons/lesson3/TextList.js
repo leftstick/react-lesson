@@ -8,6 +8,10 @@ class TextList extends React.Component {
         super(props);
     }
 
+    shouldComponentUpdate(nextProps, nextState) {
+        return this.props.list !== nextProps.list;
+    }
+
     render() {
         return (
             <ul>

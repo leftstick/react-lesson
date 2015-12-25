@@ -9,6 +9,10 @@ class InputBar extends React.Component {
         this._addText = this._addText.bind(this);
     }
 
+    shouldComponentUpdate(nextProps, nextState) {
+        return this.props.onTextAdded !== nextProps.onTextAdded;
+    }
+
     _addText(e) {
         this.props.onTextAdded(this.refs.txt.value);
         this.refs.txt.value = '';
