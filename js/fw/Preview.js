@@ -11,8 +11,7 @@ class Preview extends React.Component {
     }
 
     shouldComponentUpdate(nextProps, nextState) {
-        //no idea
-        return true;
+        return this.props.style !== nextProps.style || this.props.children !== nextProps.children;
     }
 
     render() {
