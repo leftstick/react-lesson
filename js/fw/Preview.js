@@ -10,6 +10,10 @@ class Preview extends React.Component {
         super(props);
     }
 
+    shouldComponentUpdate(nextProps, nextState) {
+        return this.props.style !== nextProps.style;
+    }
+
     render() {
         var style = assign({}, this.props.style, styles.block);
         return (

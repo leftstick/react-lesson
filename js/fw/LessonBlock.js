@@ -16,6 +16,10 @@ class LessonBlock extends React.Component {
         this._onMouseLeave = this._onMouseLeave.bind(this);
     }
 
+    shouldComponentUpdate(nextProps, nextState) {
+        return this.props.title !== nextProps.title || this.props.to !== nextProps.to;
+    }
+
     _onMouseEnter() {
         this.setState({
             block: assign({}, styles.block, {
